@@ -36,12 +36,16 @@ class FoodModel {
 		}
 	}
 
+	// delete(id) {
+	// 	if (id) {
+	// 		const idx = this.db.indexOf(this.db.find((record) => record.id === id));
+	// 		this.db.splice(idx, 1);
+	// 		return null;
+	// 	}
+	// }
 	delete(id) {
-		if (id) {
-			const idx = this.db.indexOf(this.db.find((record) => record.id === id));
-			this.db.splice(idx, 1);
-			return null;
-		}
+		let index = this.db.indexOf(this.read(id));
+		delete this.db[index];
 	}
 }
 
