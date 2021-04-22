@@ -1,0 +1,26 @@
+{
+  "name": "basic-api-server",
+  "version": "1.0.0",
+  "description": "izza website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "jest --verbose --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/S2Mackinley/basic-api-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/S2Mackinley/basic-api-server/issues"
+  },
+  "homepage": "https://github.com/S2Mackinley/basic-api-server#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jest": "^26.6.3",
+    "supertest": "^6.1.3"
+  }
+}
